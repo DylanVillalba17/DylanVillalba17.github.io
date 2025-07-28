@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaPay</title>
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header y navegación -->
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1 class="logo"><a href="#" class="nav__links">CasaPay</a></h1>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav_items"><a href="#" class="nav__links">Inicio</a></li>
+                <li class="nav_items"><a href="#propiedades" class="nav__links">Propiedades</a></li>
+                <li class="nav_items"><a href="#contacto" class="nav__links">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portada">
+    <div class="portada__contenido">
+        <h1 class="portada__titulo">¡Encontrá tu próxima casa!</h1>
+        <p class="portada__descripcion">Añadir presentacion de productos y servicios brindados en la pagina, podemos incluir otro tipo de info tambien.</p>
+        <p class="portada__descripcion">Si buscas un servicio mas personalizado o tienes consultas concretas ¡Puedes contactarnos a servicio rapido!</p>
+        <a href="#contacto" class="cta">¡Contactanos!</a>
+    </div>
+</section>
+        
+    <!-- Sección de propiedades -->
+    <main>
+        <!-- Carrusel de propiedades populares -->
+    <section id="propiedades" class="carousel-section">
+        <h2 class="subtitle">Propiedades destacadas</h2>
+        <div class="carousel-container">
+            <button class="carousel-btn prev">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa1.jpg" alt="Casa 1"></div>
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa2.jpg" alt="Casa 2"></div>
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa3.jpg" alt="Casa 3"></div>
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa4.jpg" alt="Casa 4"></div>
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa1.jpg" alt="Casa 1"></div>
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa2.jpg" alt="Casa 2"></div>
+                <div class="carousel-item" data-url="propiedades/casa1.html"><img src="./images/precasa3.jpg" alt="Casa 3"></div>
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+        <div class="ver-mas">
+            <a href="propiedades.html" class="cta">Ver Propiedades</a>
+        </div>
+    </section>
+
+       <section id="contacto" class="contacto">
+  <div class="contacto__overlay"></div>
+  <div class="contacto__contenido">
+    <h2>CasaPay</h2>
+    <div class="contacto__datos">
+      <h3 class="contacto__titulo">¿Querés saber más?</h3>
+      <p class="contacto__descripcion">Contactanos directamente para agendar una visita o recibir más información.</p>
+      <ul class="contacto__lista">
+        <li>
+          <img src="./images/whatsapp.png" alt="WhatsApp" class="contacto__icono">
+          <a href="https://wa.me/59899277043" target="_blank">+598 99 277 043</a>
+        </li>
+        <li>
+          <img src="./images/instagram.png" alt="Instagram" class="contacto__icono">
+          <a href="https://instagram.com/_.wynd._" target="_blank">@CasaPay</a>
+        </li>
+        <li>
+          <img src="./images/gmail.png" alt="Gmail" class="contacto__icono">
+          <a href="mailto:CasaPay2025@gmail.com">CasaPay2025@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2025 Casas en Paysandú. Todos los derechos reservados.</p>
+    </footer>
+<script src="./js/carousel.js"></script>
+</body>
+
+</html>
