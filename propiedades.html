@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaPay</title>
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header y navegación -->
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1 class="logo"><a href="index.html" class="nav__links">CasaPay</a></h1>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav_items"><a href="index.html" class="nav__links">Inicio</a></li>
+                <li class="nav_items"><a href="index.html#propiedades" class="nav__links">Propiedades</a></li>
+                <li class="nav_items"><a href="index.html#contacto" class="nav__links">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filtros -->
+    <section class="filtros container">
+        <select id="filtro-operacion">
+            <option value="">Operación</option>
+            <option value="venta">Venta</option>
+            <option value="alquiler">Alquiler</option>
+        </select>
+
+        <select id="filtro-tipo">
+            <option value="">Tipo</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="terreno">Terreno</option>
+        </select>
+
+        <select id="filtro-departamento">
+            <option value="">Departamento</option>
+            <option value="paysandu">Paysandú</option>
+            <option value="montevideo">Montevideo</option>
+            <option value="salto">Salto</option>
+            <!-- Agregar más si es necesario -->
+        </select>
+
+        <input type="number" id="filtro-precio" placeholder="Precio máximo">
+    </section>
+
+    <!-- Lista de Propiedades -->
+    <section id="propiedades" class="propiedades container">
+        <!-- Casa 1 ------------------------------------------------------------------>
+        <div class="propiedad" 
+            data-operacion="venta" 
+            data-tipo="casa" 
+            data-departamento="paysandu" 
+            data-precio="15000" 
+            onclick="location.href='./propiedades/casa1.html'">
+            <img src="./images/casa1.png" alt="Casa moderna en Barrio Obrero">
+        </div>
+        <!-- Casa 2 ------------------------------------------------------------------>
+        <div class="propiedad" 
+            data-operacion="venta" 
+            data-tipo="terreno" 
+            data-departamento="paysandu" 
+            data-precio="30000" 
+            onclick="location.href='./propiedades/casa2.html'">
+            <img src="./images/casa2.png" alt="Terreno Ruta 3">
+        </div>
+        <!-- Casa 3 ------------------------------------------------------------------>
+         <div class="propiedad"  
+            data-operacion="venta"
+            data-tipo="casa" 
+            data-departamento="paysandu" 
+            data-precio="22000" 
+            onclick="location.href='./propiedades/casa3.html'">
+            <img src="./images/casa3.png" alt="Casa zona centrica">
+        </div>
+        <!-- Casa 4 ------------------------------------------------------------------>
+         <div class="propiedad" 
+            data-operacion="alquiler" 
+            data-tipo="apartamento" 
+            data-departamento="paysandu" 
+            data-precio="320" 
+            onclick="location.href='./propiedades/casa4.html'">
+            <img src="./images/casa4.png" alt="Apartamento 18 de julio">
+        </div>
+        <!-- Casa 5 ------------------------------------------------------------------>
+         <div class="propiedad" 
+            data-operacion="venta" 
+            data-tipo="casa" 
+            data-departamento="montevideo" 
+            data-precio="100500" 
+            onclick="location.href='./propiedades/casa5.html'">
+            <img src="./images/casa5.png" alt="Mansion Montevideo">
+        </div>     
+        <!-- Más propiedades aquí... -->
+    </section>
+
+    <script src="./js/filtrar.js"></script>
+</body>
+
+</html>

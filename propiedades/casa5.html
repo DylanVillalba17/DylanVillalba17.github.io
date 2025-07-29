@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa en Barrio Centro - Paysandú</title>
+    <link rel="shortcut icon" href="../images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body class="detalle-propiedad">
+     <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1 class="logo"><a href="../index.html" class="nav__links">CasaPay</a></h1>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav_items"><a href="../index.html" class="nav__links">Inicio</a></li>
+                <li class="nav_items"><a href="../index.html#propiedades" class="nav__links">Propiedades</a></li>
+                <li class="nav_items"><a href="../index.html#contacto" class="nav__links">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-propiedad">
+    <main class="container propiedad-detalle">
+
+  <h1 class="subtitle">Mansion entrada a Montevideo</h1>
+
+  <!-- Layout en dos columnas: galería + info -->
+  <section class="detalle-layout">
+    
+    <!-- Galería flexible -->
+    <div class="galeria-modern">
+      <img src="./images/imagenPrueba.png" alt="Frente de la casa">
+      <img src="./images/imagenPrueba.png" alt="Living principal">
+      <img src="./images/imagenPrueba.png" alt="Patio trasero">
+      <img src="./images/imagenPrueba.png" alt="Frente de la casa">
+      <img src="./images/imagenPrueba.png" alt="Living principal">
+    </div>
+
+    <!-- Resumen técnico -->
+    <aside class="ficha-tecnica">
+      <h3>Características</h3>
+      <ul>
+        <li>Metros construidos: 450 m²</li>
+        <li>Terreno: 180 m²</li>
+        <li>Orientación: sur</li>
+        <li>Baños: 4</li>
+        <li>Habitaciones: 6</li>
+        <li>Estado: Pronta para habitar</li>
+      </ul>
+      <h3>U$D 100.500</h3>
+      <a href="https://wa.me/59899277043" class="cta">Contactar por WhatsApp</a>
+    </aside>
+
+  </section>
+
+ <!-- Descripción -->
+  <div class="info descripcion">
+    <h3>Descripción general</h3>
+    <p>Ubicada en la entrada al Barrio, con garaje y acceso a abundante luz solar.</p>
+  </div>
+
+  <!-- Video -->
+  <div class="video">
+    <h3>Recorrido en video</h3>
+    <video width="100%" height="auto" controls>
+      <source src="./videos/Casa1.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+
+  <!-- Mapa -->
+  <div class="mapa">
+    <h3>Ubicación aproximada</h3>
+    <!-- Cambiar Coordenadas para cambiar mapa -->
+    <iframe
+      src="https://maps.google.com/maps?q=-34.760439, -56.271055&hl=es&z=15&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</main>
+</div>
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2025 Casas en Paysandú. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+  <span class="lightbox-close" onclick="cerrarLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  document.querySelectorAll('.galeria-modern img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  function cerrarLightbox() {
+    lightbox.style.display = 'none';
+  }
+
+  // Cerrar si se hace clic fuera de la imagen
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      cerrarLightbox();
+    }
+  });
+</script>
+
+</body>
+
+</html>
